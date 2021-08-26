@@ -39,7 +39,7 @@ function operate(num1, num2, operator){
             return (multiplied)
         case '/':
             const divided = divide(num1,num2);
-            return (divided)
+            return (divided.toFixed(11))
     }
     
 }
