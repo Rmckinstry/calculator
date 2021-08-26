@@ -1,0 +1,115 @@
+h1{
+    text-align: right;
+}
+#calc-container{
+    background-color: lightgray;
+}
+#display-container{
+    background-color: darkgray;
+}
+#clear{
+    background-color: darksalmon;
+    border-color: darksalmon;
+    border-radius: 5%;
+}
+.op{
+    background-color: darkseagreen;
+    border-color: darkseagreen;
+}
+.num{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+
+@media (max-width: 800px){
+    body{
+        padding: 15px;
+    }
+    button{
+        font-size: medium;
+        font-weight: 900;
+    }
+
+    #calc-container{
+        padding: 10px;
+        margin-top: 20%;
+        border-style: solid;
+        border-width: 7px;
+        border-radius: 7%;
+        height:500px;
+    }
+
+    #display-container{
+        border-style: solid;
+        padding-right: 10px;
+        margin: 10px;
+    }
+
+    #func-buttons-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+        height:40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+    #numops-buttons-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 300px;
+        grid-gap: 5px;
+        padding: 5px;
+    }
+}
+
+@media (min-width:800px){
+    body{
+        padding: 15px;
+        position: relative;
+    }
+    button{
+        font-size: medium;
+        font-weight: 900;
+    }
+
+    #calc-container{
+        position: absolute;
+        left:36.5%;
+        bottom: -2500%;
+        padding: 10px;
+        margin-top: 20%;
+        border-style: solid;
+        border-width: 7px;
+        border-radius: 7%;
+        height:700px;
+        width:30%
+    }
+
+    #display-container{
+        border-style: solid;
+        padding-right: 10px;
+        margin: 10px;
+    }
+
+    #func-buttons-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+        height:70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+    #numops-buttons-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 460px;
+        grid-gap: 5px;
+        padding: 5px;
+    }
+}
