@@ -49,6 +49,7 @@ function operate(num1, num2, operator){
 const numbers = document.querySelectorAll('.num')
 const operators = document.querySelectorAll('.op')
 const display = document.querySelector('.display')
+const clear = document.querySelector('#clear')
 
 
 let displayValue='';
@@ -128,17 +129,30 @@ operators.forEach((operator)=>{
                 break;
             }
             case 'equal':
-                if(displayValue==''){
-                    displayValue=0;
-                    console.log(operate(prevValue,displayValue,userOperator));
-                    displayValue=(operate(prevValue,Number(displayValue),userOperator));
-                    break;
+                if(userOperator==''){ //enter before operator check
+                    display.textContent=`${displayValue}`
                 }
                 else{
-                    display.textContent=`${(operate(prevValue,Number(displayValue),userOperator))}`
-                    displayValue=(operate(prevValue,Number(displayValue),userOperator));
-                    break;
+                    if(displayValue==''){
+                        displayValue=0;
+                        display.textContent=`${(operate(prevValue,Number(displayValue),userOperator))}`
+                        displayValue=(operate(prevValue,Number(displayValue),userOperator));
+                        break;
+                    }
+                    else{
+                        display.textContent=`${(operate(prevValue,Number(displayValue),userOperator))}`
+                        displayValue=(operate(prevValue,Number(displayValue),userOperator));
+                        break;
+                    }
                 }
+                
         }
     })
 })
+
+clear.addEventListener('click',()=>{
+    display.textContent='0'
+    displayValue='';
+    prevValue='';
+    userOperator='';
+});
