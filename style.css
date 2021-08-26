@@ -1,3 +1,9 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+}
+button{
+    font-family: 'Orbitron', sans-serif;
+}
 h1{
     text-align: right;
 }
@@ -71,8 +77,12 @@ h1{
         position: relative;
     }
     button{
-        font-size: medium;
+        font-size: large;
         font-weight: 900;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 15px;
     }
 
     #calc-container{
@@ -90,7 +100,7 @@ h1{
 
     #display-container{
         border-style: solid;
-        padding-right: 10px;
+        padding-right: 20px;
         margin: 10px;
     }
 

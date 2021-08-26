@@ -7,33 +7,36 @@
     <title>Calculator</title>
     <script src='main.js' defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div id='calc-container'>
         <div id="display-container">
-            <h1 class='display'>5120</h2>
+            <h1 class='display'>0</h2>
         </div>
         <div id='func-buttons-container'>
             <button id='clear'>Clear</button>
         </div>
         <div id='numops-buttons-container'>
 
-            <button class='num-op num'>9</button>
-            <button class='num-op num'>8</button>
-            <button class='num-op num'>7</button>
-            <button class='num-op op'>/</button>
-            <button class='num-op num'>6</button>
-            <button class='num-op num'>5</button>
-            <button class='num-op num'>4</button>
-            <button class='num-op op'>x</button>
-            <button class='num-op num'>3</button>
-            <button class='num-op num'>2</button>
-            <button class='num-op num'>1</button>
-            <button class='num-op op'>-</button>
-            <button class='num-op op'>.</button>
-            <button class='num-op num'>0</button>
-            <button class='num-op op'>=</button>
-            <button class='num-op op'>+</button>
+            <button class='num' id='9'>9</button>
+            <button class='num' id='8'>8</button>
+            <button class='num' id='7'>7</button>
+            <button class='op' id='divide'>/</button>
+            <button class='num' id='6'>6</button>
+            <button class='num' id='5'>5</button>
+            <button class='num' id='4'> 4</button>
+            <button class='op' id='multiply'>x</button>
+            <button class='num' id='3'>3</button>
+            <button class='num' id='2'>2</button>
+            <button class='num' id='1'>1</button>
+            <button class='op' id='subtract'>-</button>
+            <button class='op' id='decimal'>.</button>
+            <button class='num'id='0'>0</button>
+            <button class='op'id='equal'>=</button>
+            <button class='op'id='add'>+</button>
         </div>
     </div>
     
